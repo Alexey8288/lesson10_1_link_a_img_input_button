@@ -67,16 +67,16 @@ body {
 }
 
 .btn-link__image {
-        /* размер текста */
-            font-size: 1rem;
-            /* убирает подчеркивание на ссылке */
-            text-decoration: none;
-            
+    /* размер текста */
+    font-size: 1rem;
+    /* убирает подчеркивание на ссылке */
+    text-decoration: none;
+    /* цвет текста */
+    color: red;
     display: block;
     width: 100%;
     /* текст по центру (ширина) */
-        text-align: center;
-
+    text-align: center;
 }
 
 .btn-link__image:hover {
@@ -89,12 +89,10 @@ body {
     /* добавить, все на странице может дергаться */
     /* border: 2px solid green; */
     /* можно вместо бордера использовать тень на бокс */
-    box-shadow: 0 0 7px green;
+    box-shadow: 0 0 15px #57a9d8;
     /* свойство заменяет бордер, обводка и ничего не дергается */
     /* outline: 2px solid green; */
 }
-
-
 
 .btn-input {
     /* размер текста */
