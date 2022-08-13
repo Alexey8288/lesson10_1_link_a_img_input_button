@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+    display: flex;
+    /* элементы из строчного стали столбиком, в один ряд */
+    flex-direction: column;
+
+    /* отступы между кнопками */
+    /* em - размер берется от размера шрифта (у нас 16px)  */
+    gap: 2em;
+
+    /* в контейнере wrap внутренние отступы */
+    padding: 50px;
+
+    /* макс ширина */
+    max-width: 300px;
+}
+
+/* увеличивает саму нажимаемую кнопку */
+.btn-link {
+    /* убирает подчеркивание на ссылке */
+    text-decoration: none;
+    /* указываем цвет, цвет от родителя НЕ наследуется */
+    color: red;
+    /* задний фон кнопки */
+    background-color: yellow;
+    /* рамочка на кнопке */
+    border: 2px solid green;
+    /* закругление по углам */
+    border-radius: 1em;
+    /* для того чтобы работать padding */
+    display: block;
+    /* верх/низ и слева-справа */
+    padding: 0.75em 1em;
+    /* текст по центру (ширина) */
+    text-align: center;
+/* скорость замедления эфекта */
+    transition: 0.5s;
+}
+/* добавление эфектов, псевдоклас hover */
+.btn-link:hover {
+background-color: orange;
+color: green;
+border-color: red;
+
+}
+
+.btn-input {}
+
+.btn-button {}
