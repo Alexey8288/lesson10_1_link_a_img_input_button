@@ -15,14 +15,11 @@ body {
     display: flex;
     /* элементы из строчного стали столбиком, в один ряд */
     flex-direction: column;
-
     /* отступы между кнопками */
     /* em - размер берется от размера шрифта (у нас 16px)  */
     gap: 2em;
-
     /* в контейнере wrap внутренние отступы */
     padding: 50px;
-
     /* макс ширина */
     max-width: 300px;
 }
@@ -67,8 +64,37 @@ body {
     box-shadow: 0 0 7px green;
     /* свойство заменяет бордер, обводка и ничего не дергается */
     /* outline: 2px solid green; */
+}
+
+.btn-link__image {
+        /* размер текста */
+            font-size: 1rem;
+            /* убирает подчеркивание на ссылке */
+            text-decoration: none;
+            
+    display: block;
+    width: 100%;
+    /* текст по центру (ширина) */
+        text-align: center;
 
 }
+
+.btn-link__image:hover {
+    /* способ 1 */
+    background-color: orange;
+    color: green;
+    /* border-color: red; */
+    /* способ 2 */
+    /* если изначально бордера не было но захотели */
+    /* добавить, все на странице может дергаться */
+    /* border: 2px solid green; */
+    /* можно вместо бордера использовать тень на бокс */
+    box-shadow: 0 0 7px green;
+    /* свойство заменяет бордер, обводка и ничего не дергается */
+    /* outline: 2px solid green; */
+}
+
+
 
 .btn-input {
     /* размер текста */
