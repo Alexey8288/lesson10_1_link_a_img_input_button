@@ -74,7 +74,7 @@ body {
     /* цвет текста */
     color: red;
     display: block;
-    width: 100%;
+    /* width: 100%; */
     /* текст по центру (ширина) */
     text-align: center;
     /* скорость замедления эфекта */
