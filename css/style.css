@@ -29,6 +29,8 @@ body {
 
 /* увеличивает саму нажимаемую кнопку */
 .btn-link {
+    /* размер текста */
+    font-size: 1rem;
     /* убирает подчеркивание на ссылке */
     text-decoration: none;
     /* указываем цвет, цвет от родителя НЕ наследуется */
@@ -37,7 +39,7 @@ body {
     background-color: yellow;
     /* рамочка на кнопке */
     border: 2px solid green;
-    /* прозрачный order */
+    /* прозрачный border */
     /* border: 2px solid transparent; */
     /* закругление по углам */
     border-radius: 1em;
@@ -69,24 +71,81 @@ body {
 }
 
 .btn-input {
-            /* указываем цвет, цвет от родителя НЕ наследуется */
-            color: red;
-            /* задний фон кнопки */
-            background-color: yellow;
-            /* рамочка на кнопке */
-            border: 2px solid green;
-            /* прозрачный order */
-            /* border: 2px solid transparent; */
-            /* закругление по углам */
-            border-radius: 1em;
-            /* для того чтобы работать padding */
-            display: block;
-            /* верх/низ и слева-справа */
-            padding: 0.75em 1em;
-            /* текст по центру (ширина) */
-            text-align: center;
-            /* скорость замедления эфекта */
-            transition: 0.5s;
+    /* размер текста */
+    font-size: 1rem;
+    /* указываем цвет, цвет от родителя НЕ наследуется */
+    color: red;
+    /* задний фон кнопки */
+    background-color: yellow;
+    /* рамочка на кнопке */
+    border: 2px solid green;
+    /* прозрачный border */
+    /* border: 2px solid transparent; */
+    /* можно сбросить, убрать border */
+    /* border: none; */
+    /* закругление по углам */
+    border-radius: 1em;
+    /* для того чтобы работать padding */
+    display: block;
+    /* верх/низ и слева-справа */
+    padding: 0.75em 1em;
+    /* текст по центру (ширина) */
+    text-align: center;
+    /* скорость замедления эфекта */
+    transition: 0.5s;
 }
 
-.btn-button {}
+.btn-input:hover {
+    /* способ 1 */
+    background-color: orange;
+    color: green;
+    /* border-color: red; */
+    /* способ 2 */
+    /* если изначально бордера не было но захотели */
+    /* добавить, все на странице может дергаться */
+    /* border: 2px solid green; */
+    /* можно вместо бордера использовать тень на бокс */
+    box-shadow: 0 0 7px green;
+    /* свойство заменяет бордер, обводка и ничего не дергается */
+    /* outline: 2px solid green; */
+}
+
+.btn-button {
+    /* размер текста */
+    font-size: 1rem;
+    /* указываем цвет, цвет от родителя НЕ наследуется */
+    color: red;
+    /* задний фон кнопки */
+    background-color: yellow;
+    /* рамочка на кнопке */
+    border: 2px solid green;
+    /* прозрачный border */
+    /* border: 2px solid transparent; */
+    /* можно сбросить, убрать border */
+    /* border: none; */
+    /* закругление по углам */
+    border-radius: 1em;
+    /* для того чтобы работать padding */
+    display: block;
+    /* верх/низ и слева-справа */
+    padding: 0.75em 1em;
+    /* текст по центру (ширина) */
+    text-align: center;
+    /* скорость замедления эфекта */
+    transition: 0.5s;
+}
+
+.btn-button:hover {
+    /* способ 1 */
+    background-color: orange;
+    color: green;
+    /* border-color: red; */
+    /* способ 2 */
+    /* если изначально бордера не было но захотели */
+    /* добавить, все на странице может дергаться */
+    /* border: 2px solid green; */
+    /* можно вместо бордера использовать тень на бокс */
+    box-shadow: 0 0 7px green;
+    /* свойство заменяет бордер, обводка и ничего не дергается */
+    /* outline: 2px solid green; */
+}
