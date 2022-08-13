@@ -77,6 +77,8 @@ body {
     width: 100%;
     /* текст по центру (ширина) */
     text-align: center;
+    /* скорость замедления эфекта */
+    transition: 0.5s;
 }
 
 .btn-link__image:hover {
