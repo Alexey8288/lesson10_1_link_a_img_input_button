@@ -37,6 +37,8 @@ body {
     background-color: yellow;
     /* рамочка на кнопке */
     border: 2px solid green;
+    /* прозрачный order */
+    /* border: 2px solid transparent; */
     /* закругление по углам */
     border-radius: 1em;
     /* для того чтобы работать padding */
@@ -45,17 +47,46 @@ body {
     padding: 0.75em 1em;
     /* текст по центру (ширина) */
     text-align: center;
-/* скорость замедления эфекта */
+    /* скорость замедления эфекта */
     transition: 0.5s;
 }
+
 /* добавление эфектов, псевдоклас hover */
 .btn-link:hover {
-background-color: orange;
-color: green;
-border-color: red;
+    /* способ 1 */
+    background-color: orange;
+    color: green;
+    /* border-color: red; */
+    /* способ 2 */
+    /* если изначально бордера не было но захотели */
+    /* добавить, все на странице может дергаться */
+    /* border: 2px solid green; */
+    /* можно вместо бордера использовать тень на бокс */
+    box-shadow: 0 0 7px green;
+    /* свойство заменяет бордер, обводка и ничего не дергается */
+    /* outline: 2px solid green; */
 
 }
 
-.btn-input {}
+.btn-input {
+            /* указываем цвет, цвет от родителя НЕ наследуется */
+            color: red;
+            /* задний фон кнопки */
+            background-color: yellow;
+            /* рамочка на кнопке */
+            border: 2px solid green;
+            /* прозрачный order */
+            /* border: 2px solid transparent; */
+            /* закругление по углам */
+            border-radius: 1em;
+            /* для того чтобы работать padding */
+            display: block;
+            /* верх/низ и слева-справа */
+            padding: 0.75em 1em;
+            /* текст по центру (ширина) */
+            text-align: center;
+            /* скорость замедления эфекта */
+            transition: 0.5s;
+}
 
 .btn-button {}
