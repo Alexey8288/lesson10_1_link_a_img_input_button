@@ -24,6 +24,8 @@ body {
     max-width: 300px;
 }
 
+
+
 /* увеличивает саму нажимаемую кнопку */
 .btn-link {
     /* размер текста */
@@ -174,4 +176,39 @@ body {
     box-shadow: 0 0 7px green;
     /* свойство заменяет бордер, обводка и ничего не дергается */
     /* outline: 2px solid green; */
+}
+
+
+.btn-container {
+    margin-left: 50px;
+        }
+
+.btn-hover-focus-activ {
+    /* убирает подчеркивание на ссылке */
+    text-decoration: none;
+    font-size: 50px;
+    background-color: aqua;
+    color: black;
+    /* скорость замедления эфекта */
+    transition: 0.5s;
+}
+
+/* применяется при наведении курсора */
+.btn-hover-focus-activ:hover {
+    /* меняет цвет при наведении курсора */
+    background-color: chartreuse;
+    color: white;
+    font-size: 100px;
+}
+
+/* применяется при выборе этого элемента с помощью TAB */
+.btn-hover-focus-activ:focus {
+    /* при нажатии на ссылку меняет цвет */
+    background-color: yellow;
+}
+
+/* применяется при нажатии на кнопку */
+.btn-hover-focus-activ:active {
+    /* при нажатии на ссылку меняет цвет */
+    background-color: red;
 }
